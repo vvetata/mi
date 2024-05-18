@@ -1,0 +1,256 @@
+$bg: #222222;
+$white: #F1F1F1;
+$black: #151515;
+$orange: #FF4C0D;
+
+%btn-text {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.wrapper {
+    overflow: hidden;
+    background-color: $bg;
+}
+
+.header__img {
+    position: absolute;
+    top: 0;
+    left: 48%;
+    z-index: 2;
+    margin-top: -50px;
+}
+
+.header__lg1 {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    margin-top: -50px;
+    z-index: 1;
+}
+.header__lg2 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-top: -50px;
+    z-index: 1;
+}
+.header__lg3 {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    margin-left: -130px;
+    z-index: 1;
+}
+
+.header__container{
+    position: relative;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 47px 0 124px;
+    position: relative;
+    z-index: 5;
+}
+
+.header__top_black {
+color:#222222;
+}
+
+.heder__right {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.header__logo {
+    max-width: 60px;
+    margin-right: 80px;
+    svg{
+        color: $orange;
+    }
+}
+
+.header__nav {
+    display: flex;
+    
+    a{
+        line-height: 150%;
+        letter-spacing: 10;
+        margin-right: 40px;
+    }
+}
+.header__button {
+}
+.button {
+    display: block;
+    background-color: $white;
+    border-radius: 65px;
+    min-width: 122px;
+    min-height: 54px;
+    @extend %btn-text;
+}
+
+.header__main {
+    margin-bottom: 250px;
+    position: relative;
+    z-index: 5;
+}
+
+.header__main_black {
+    .title{
+        color: $orange;
+    }
+    .subtitle{
+        color: $black;
+    }
+}
+
+.title {
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 100%;
+    color: $white;
+    padding-bottom: 30px;
+}
+.subtitle {
+    font-size: 30px;
+    line-height: 120%;
+    font-weight: 600;
+    color: $orange;
+    margin-bottom: 60px;
+}
+
+.button__style {
+    display: inline-block;
+    min-width: 248px;
+    min-height: 54px;
+    border: 3px solid $white;
+    border-radius: 108px;
+}
+
+.button__style_black {
+    border: 3px solid $black;
+}
+
+.btn__white {
+    min-width: 118px;
+    min-height: 54px;
+    border-radius: 65px;
+    background-color: $white;
+    @extend %btn-text;
+}
+
+.btn__white_black {
+    background-color: transparent;
+    color: $black;
+}
+
+.btn__black {
+    min-width: 130px;
+    min-height: 54px;
+    border-radius: 65px;
+    @extend %btn-text;
+    color: $white;
+    background-color: transparent;
+}
+
+.btn__black_black {
+    background-color: $black;
+    color: $white;
+}
+
+@media (max-width: 961px) {
+    .header__nav {
+        display: none;
+    }
+    .header__img {
+        z-index: 2;
+        margin-top: -50px;
+    }
+    .header__main {
+        margin-bottom: 150px;
+    }
+    .title {
+        font-size: 40px;
+        line-height: 120%;
+    }
+    .subtitle {
+        font-size: 20px;
+        line-height: 120%;
+        margin-bottom: 48px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header__container {
+        display: flex;
+        flex-direction: column;
+    }
+    .header__img {
+        max-width: 337px;
+        display: block;
+        top: 50px;
+        left: 50%;
+        transform: translate(-50%);
+        img{
+            width: 150%;
+        }
+    }
+    .header__main {
+        padding-top: 150px;
+        margin-bottom: 60px;
+    }
+    .title {
+        font-size: 30px;
+        line-height: 100%;
+    }
+    .subtitle {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+
+    .button__style {
+        display: inline-block;
+        width: 100%;
+        border: 3px solid $white;
+        text-wrap: nowrap;
+    }
+    .button__style_black {
+        border: 3px solid $black;
+    }
+    .btn__white {
+        width: 49%;
+        min-height: 54px;
+        border-radius: 65px;
+        background-color: $white;
+        @extend %btn-text;
+    }
+
+    .btn__white_black {
+        background-color: transparent;
+        color: $black;
+    }
+    
+    .btn__black {
+        width: 50%;
+        min-height: 54px;
+        border-radius: 65px;
+        @extend %btn-text;
+        color: $white;
+        background-color: transparent;
+    }
+    .btn__black_black {
+        background-color: $black;
+        color: $white;
+    }
+}
+
+@media (max-width: 420px) {
+    .header__main {
+        padding-top: 80px;
+    }
+}

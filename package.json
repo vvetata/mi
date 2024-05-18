@@ -1,0 +1,24 @@
+{
+  "name": "mi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "css-loader": "^7.1.1",
+    "sass": "^1.77.1",
+    "sass-loader": "^14.2.1",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "webpack-dev-server": "^5.0.4"
+  }
+}
