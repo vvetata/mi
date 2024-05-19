@@ -3,7 +3,8 @@ const path = require('path');
 module.exports = {
     mode: 'development',
     entry: {
-        filename: path.resolve(__dirname, 'src/index.js')
+        filename: path.resolve(__dirname, 'src/index.js'),
+        filename: path.resolve(__dirname, './dist/css/main.min.css')
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -34,4 +35,5 @@ module.exports = {
       },
     
 }
+
 

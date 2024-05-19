@@ -1,8 +1,10 @@
-import './sass/main.scss'
+import './sass/main.scss';
+import '../dist/css/main.min.css';
 
 let btnBlack = document.querySelector('.btn__black');
 let btnWhite = document.querySelector('.btn__white');
 let bg = document.querySelector('.wrapper');
+
 
 let header = document.querySelector('.header');
 let headerTop = document.querySelector('.header__top');
@@ -12,6 +14,10 @@ let btnStyle = document.querySelector('.button__style');
 let headerImage =document.querySelector('.header__img');
 let text = document.querySelectorAll('.text');
 let textArray = Array.from(text);
+let aboutHead = document.querySelector('.about__head');
+let viewHead = document.querySelector('.view__head');
+let textView = document.querySelectorAll('.textMobile');
+let textMobileArray = Array.from(textView);
 
 let aboutLine = document.querySelector('.about__line');
 
@@ -26,6 +32,9 @@ btnBlack.onclick = () => {
     btnWhite.classList.add('btn__white_black');
     btnBlack.classList.add('btn__black_black');
     changeTextColorToBlack();
+    aboutHead.style.color = '#151515';
+    viewHead.classList.add('view__head_black');
+    changeColorViewCardToBlack();
 }
 
 
@@ -40,7 +49,12 @@ btnWhite.onclick = () => {
     btnWhite.classList.remove('btn__white_black');
     btnBlack.classList.remove('btn__black_black');
     changeTextColorToWhite();
+    aboutHead.style.color = '';
+    viewHead.classList.remove('view__head_black');
+    changeColorViewCardToWhite();
 }
+
+
 let changeTextColorToBlack = () => {
   for (let t of textArray) {
     t.style.color = "#151515";
@@ -50,12 +64,20 @@ let changeTextColorToBlack = () => {
       t.style.color = "#F1F1F1";
     }}
 
+let changeColorViewCardToBlack = () => {
+  if (document.innerWidth < 480) {
+    for (let tM of textMobileArray) {
+      tM.style.color = '#151515';
+    }} else {
+      for (let tM of textMobileArray) {
+      tM.style.color = '';
+    }
+  }
+  }
 
-/*if (window.innerWidth <= 1000) {
-    aboutLine.removeAttribute('src');
+
+let changeColorViewCardToWhite = () => {
+    for (let tM of textMobileArray) {
+      tM.style.color = '';
+  }
 }
-
-if (window.innerWidth <= 480) {
-    aboutLine.removeAttribute('src');
-    aboutLine.setAttribute('src', 'images/about/lineMobile.png');
-}*/

@@ -1,0 +1,158 @@
+$bg: #222222;
+$white: #F1F1F1;
+$black: #151515;
+$orange: #FF4C0D;
+
+.view {
+    padding: 120px 0;
+    background: url(/dist/images/view/lg1.png) no-repeat top right,
+    url(/dist/images/view/line.png) no-repeat top right;
+}
+.view__container {
+}
+.view__head {
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 110%;
+    margin-bottom: 70px;
+    color: $orange;
+}
+
+.view__head_black {
+    color: $black;
+}
+
+.view__body {
+    display: flex;
+    justify-content: space-between;
+}
+.view__card {
+    position: relative;
+    flex: 1 1 560px;
+    min-height: 550px;
+    background-color: #0E0E0E;
+    border-radius: 15px;
+    &:not(:last-child) {
+    margin-right: 40px;
+    }
+}
+
+.card-view__image {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.card-view__image_1 {
+    height: 70%;
+}
+
+.card-view__content{
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    margin-bottom: 60px;
+    padding: 0 60px;
+}
+
+
+.card-view__title {
+    font-size: 20px; 
+    font-weight: 600;
+    line-height: 120%;
+    margin-bottom: 20px;
+}
+
+.card-view__text {
+    font-size: 14px; 
+    line-height: 150%;
+    letter-spacing: -1%;
+}
+
+
+
+@media (max-width: 960px) {
+    .view {
+        padding: 80px 0;
+        background: url(/dist/images/view/lg1.png) no-repeat top right;
+    }
+    .view__head {
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 30px;
+        color: $white;
+    }
+    
+    .view__head_black {
+        color: $black;
+    }
+    
+    .view__body {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .view__card {
+        width: 100%;
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+    .card-view__content{
+        position: absolute;
+        z-index: 5;
+        bottom: 0;
+        margin-bottom: 30px;
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .view {
+        padding: 60px 0;
+        background: url(/dist/images/view/lg1.png) no-repeat top right,
+        url(/dist/images/view/lineMobile.png) no-repeat top right
+    }
+    .view__head {
+        font-size: 25px;
+        line-height: 150%;
+        margin-bottom: 30px;
+        max-width: 400px;
+    }
+    .view__card {
+        background-color: transparent;
+        flex: 1 1 430px;
+        min-height: 0;
+        &:not(:last-child) {
+        margin-right: 0;
+        }
+    }
+    
+    .card-view__image {
+        width: 100%;
+        height: 100%;
+        max-width: 280px;
+        max-height: 260px;
+        background-color: $black;
+        margin-bottom: 15px;
+    }
+    
+    .card-view__content{
+        background-color: transparent;
+        position: static;
+        display: block;
+        padding: 0;
+        max-width: 280px;
+    }
+    
+    .card-view__title {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    
+    .card-view__text {
+        font-size: 12px; 
+        line-height: 170%;
+    }
+   
+}

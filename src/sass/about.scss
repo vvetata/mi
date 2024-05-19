@@ -1,6 +1,11 @@
+$bg: #222222;
+$white: #F1F1F1;
+$black: #151515;
+$orange: #FF4C0D;
 
 .about {
-
+    background: url(/dist/images/about/lg1.png) no-repeat bottom right,
+    url(/dist/images/about/lg2.png) no-repeat bottom right;
 }
 .about__container {
     position: relative;
@@ -14,12 +19,14 @@
     line-height: 110%;
     margin-bottom: 60px;
 }
+.about__head_black{
+    color: $black;
+}
 .text {
     opacity: 0.5;
 }
 .about__body {
     display: flex;
-    margin-bottom: 30px;
 }
 .about__column {
     flex: 1 1 33.334%;
@@ -73,26 +80,33 @@
         max-width: 760px;
         position: relative;
         z-index: 3;
-        &:hover {
+        padding-right: 10px;
+         img {
+            width: 100%;
+            &:hover {
             transform: translateX(5px) translateY(5px); 
             transition: 1s;
          }
+         }        
     }
     .about__images_2{
         max-width: 360px;
         position: relative;
         z-index: 1;
-        &:hover {
-            transform: translateX(5px) translateY(5px);
-            transition: 1s; 
+        img {
+            width: 100%;
+            &:hover {
+            transform: translateX(5px) translateY(5px); 
+            transition: 1s;
          }
+         }   
     }
 }
 
 .about__line {
     position: absolute;
-    top: 64%;
-    left: -10%;
+    top: 63%;
+    left: 15%;
     z-index: 2;
 }
 
@@ -107,7 +121,7 @@
     .about__body {
         display: flex;
         flex-direction: column;
-        margin-bottom: 40px;
+        padding-bottom: 80px;
     }
     .about__column {
        margin-bottom: 40px;
@@ -152,10 +166,9 @@
 @media (max-width: 480px) {
     .about__head {
         font-size: 25px;
-        margin-bottom: 30px;
     }
     .about__body {
-        margin-bottom: 30px;
+        padding-bottom: 60px;
     }
     .about__column {
        margin-bottom: 30px;
