@@ -1,5 +1,5 @@
 import './sass/main.scss';
-import '../dist/css/main.min.css';
+import './js/brand.js';
 
 let btnBlack = document.querySelector('.btn__black');
 let btnWhite = document.querySelector('.btn__white');
@@ -18,6 +18,8 @@ let aboutHead = document.querySelector('.about__head');
 let viewHead = document.querySelector('.view__head');
 let textView = document.querySelectorAll('.textMobile');
 let textMobileArray = Array.from(textView);
+let securityHead  = document.querySelector('.security__head');
+let phone = document.querySelector('.app__phone');
 
 let aboutLine = document.querySelector('.about__line');
 
@@ -35,6 +37,9 @@ btnBlack.onclick = () => {
     aboutHead.style.color = '#151515';
     viewHead.classList.add('view__head_black');
     changeColorViewCardToBlack();
+    securityHead.style.color = '#FF4C0D';
+    phone.removeAttribute('src');
+    phone.setAttribute('src', 'images/app/phoneWhite.png');
 }
 
 
@@ -52,6 +57,9 @@ btnWhite.onclick = () => {
     aboutHead.style.color = '';
     viewHead.classList.remove('view__head_black');
     changeColorViewCardToWhite();
+    securityHead.style.color = '';
+    phone.removeAttribute('src');
+    phone.setAttribute('src', 'images/app/phoneBlack.png');
 }
 
 

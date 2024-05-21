@@ -4,8 +4,8 @@ $black: #151515;
 $orange: #FF4C0D;
 
 .about {
-    background: url(/dist/images/about/lg1.png) no-repeat bottom right,
-    url(/dist/images/about/lg2.png) no-repeat bottom right;
+    background: url(/images/about/lg1.png) no-repeat bottom right,
+    url(/images/about/lg2.png) no-repeat bottom right;
 }
 .about__container {
     position: relative;
@@ -46,6 +46,7 @@ $orange: #FF4C0D;
 
 
 .column-about__text {
+    padding: 5px;
     padding-top: 10px;
     font-size: 14px;
     line-height: 150%;
@@ -131,6 +132,7 @@ $orange: #FF4C0D;
     .column-about__title {
         font-size: 20px;
         line-height: 120%;
+        font-weight: 600;
         padding-bottom: 10px;
         border: none;
         color: $orange;

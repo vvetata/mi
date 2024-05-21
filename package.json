@@ -10,8 +10,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "connect-livereload": "^0.6.1",
     "css-loader": "^7.1.1",
     "file-loader": "^6.2.0",
+    "less-loader": "^12.2.0",
+    "livereload": "^0.9.3",
+    "node-loader": "^2.0.0",
     "postcss-loader": "^8.1.1",
     "sass": "^1.77.1",
     "sass-loader": "^14.2.1",

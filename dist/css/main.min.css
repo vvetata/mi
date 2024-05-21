@@ -306,7 +306,7 @@ html, body {
   }
 }
 .about {
-  background: url(/dist/images/about/lg1.png) no-repeat bottom right, url(/dist/images/about/lg2.png) no-repeat bottom right;
+  background: url(/images/about/lg1.png) no-repeat bottom right, url(/images/about/lg2.png) no-repeat bottom right;
 }
 
 .about__container {
@@ -352,6 +352,7 @@ html, body {
 }
 
 .column-about__text {
+  padding: 5px;
   padding-top: 10px;
   font-size: 14px;
   line-height: 150%;
@@ -433,6 +434,7 @@ html, body {
   .column-about__title {
     font-size: 20px;
     line-height: 120%;
+    font-weight: 600;
     padding-bottom: 10px;
     border: none;
     color: #FF4C0D;
@@ -558,9 +560,12 @@ html, body {
     object-position: center;
   }
 }
+.container__bg {
+  background: url(/images/view/lg1.png) no-repeat top right, url(/images/view/line.png) no-repeat top right, url(/images/view/lg2.png) no-repeat 0 300px, url(/images/view/line2.png) no-repeat 0 650px, url(/images/security/lg1.png) no-repeat 155px 950px, url(/images/app/lg1.png) no-repeat right 1200px, url(/images/app/lg2.png) no-repeat left bottom;
+}
+
 .view {
   padding: 120px 0;
-  background: url(/dist/images/view/lg1.png) no-repeat top right, url(/dist/images/view/line.png) no-repeat top right;
 }
 
 .view__head {
@@ -697,5 +702,298 @@ html, body {
   .card-view__text {
     font-size: 12px;
     line-height: 170%;
+  }
+}
+.security__head {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 110%;
+  padding-bottom: 60px;
+}
+
+.security__body {
+  display: flex;
+}
+
+.column-about__security {
+  flex: 1 1 25%;
+}
+
+.column-security__title {
+  min-height: 61px;
+  white-space: break-spaces;
+}
+
+@media (max-width: 1000px) {
+  .security__head {
+    font-size: 30px;
+    padding-bottom: 40px;
+  }
+  .text {
+    opacity: 1;
+  }
+  .security__body {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 80px;
+  }
+  .about__column {
+    margin-bottom: 40px;
+  }
+  .column-about__title {
+    font-size: 20px;
+    line-height: 120%;
+    padding-bottom: 10px;
+    border: none;
+  }
+  .column-about__title::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: 10px;
+    width: 150px;
+    height: 3px;
+    background-color: #FF4C0D;
+  }
+  .column-about__text {
+    padding: 10px 0;
+  }
+  .column-about__img {
+    display: block;
+    max-width: 560px;
+  }
+  .about__images {
+    display: none;
+  }
+  .about__line {
+    display: none;
+  }
+  .column-security__title {
+    min-height: none;
+  }
+}
+@media (max-width: 480px) {
+  .security__head {
+    font-size: 25px;
+    line-height: 120%;
+    padding-bottom: 30px;
+  }
+  .security__body {
+    padding-bottom: 60px;
+  }
+  .about__column {
+    margin-bottom: 30px;
+  }
+  .column-about__title {
+    font-size: 16px;
+  }
+  .column-about__title::after {
+    width: 100px;
+  }
+  .column-about__text {
+    padding: 10px 0;
+    font-size: 12px;
+  }
+}
+.app {
+  position: relative;
+}
+
+.app_container {
+  display: flex;
+}
+
+.app__content {
+  padding: 150px 75px 0 0;
+}
+
+.app__title {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 110%;
+  color: #FF4C0D;
+  max-width: 525px;
+  margin-bottom: 50px;
+}
+
+.app__text {
+  line-height: 150%;
+  opacity: 1;
+  max-width: 358px;
+  margin-bottom: 60px;
+}
+
+.app__links {
+  display: flex;
+}
+
+.app__link:not(:last-child) {
+  padding-right: 20px;
+}
+
+.app__image {
+  max-height: 600px;
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+}
+.app__image img {
+  width: 100%;
+}
+
+.app__line {
+  position: absolute;
+  top: -270px;
+  left: 58%;
+  z-index: 1;
+}
+
+.brand {
+  position: relative;
+}
+
+.brand__cards {
+  position: relative;
+  max-height: 51.7%;
+  overflow: hidden;
+}
+
+.brand___card {
+  position: relative;
+}
+
+.card-brand {
+  margin: 0;
+  padding: 0;
+}
+
+.card-brand__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.card-brand__image img {
+  width: 100%;
+}
+
+.card-brand__image_opacity img {
+  filter: grayscale(60%);
+}
+
+.card-brand__content {
+  position: relative;
+  z-index: 5;
+  padding: 10.34% 10px;
+}
+
+.card-brand__logo {
+  color: #FF4C0D;
+  margin-bottom: 12.67%;
+}
+
+.card-brand__title {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 110%;
+  color: #FF4C0D;
+  margin-bottom: 4.3%;
+}
+
+.card-brand__text {
+  line-height: 150%;
+  max-width: 460px;
+  color: #151515;
+}
+
+.brand__indicators {
+  position: absolute;
+  z-index: 5;
+  top: 40%;
+  left: 90%;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+.brand__indicator {
+  display: block;
+  background-color: transparent;
+  cursor: pointer;
+}
+.brand__indicator svg {
+  color: #151515;
+  opacity: 0.2;
+}
+.brand__indicator:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.brand__indicator_active svg {
+  opacity: 1;
+}
+
+@media (max-width: 480px) {
+  .brand__cards {
+    max-height: 51.7%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 90px;
+  }
+  .brand___card {
+    display: block;
+  }
+  .card-brand__image {
+    object-position: left;
+    display: block;
+  }
+  .card-brand__image img {
+    width: 100%;
+  }
+  .card-brand__content {
+    display: block;
+    padding: 6.25% 10px;
+  }
+  .card-brand__logo {
+    color: #F1F1F1;
+    max-width: 46px;
+    max-height: 30px;
+    margin-bottom: 200px;
+  }
+  .card-brand__logo svg {
+    width: 100%;
+    height: 100%;
+  }
+  .card-brand__title {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 120%;
+    color: #F1F1F1;
+    margin-bottom: 5.2%;
+  }
+  .card-brand__text {
+    font-size: 12px;
+    line-height: 170%;
+    max-width: none;
+    color: #F1F1F1;
+  }
+  .brand__indicators {
+    display: block;
+    position: relative;
+    z-index: 5;
+    background-color: transparent;
+  }
+  .brand__indicator {
+    display: block;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .brand__indicator svg {
+    color: #151515;
+    opacity: 0.2;
+  }
+  .brand__indicator:not(:last-child) {
+    margin-bottom: 30px;
   }
 }

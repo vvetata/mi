@@ -3,8 +3,7 @@ const path = require('path');
 module.exports = {
     mode: 'development',
     entry: {
-        filename: path.resolve(__dirname, 'src/index.js'),
-        filename: path.resolve(__dirname, './dist/css/main.min.css')
+        filename: path.resolve(__dirname, 'src/index.js')
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -20,20 +19,22 @@ module.exports = {
     },
     module: {
         rules: [
-          {
-            test: /\.s[ac]ss$/i,
-            use: [
-              // Creates `style` nodes from JS strings
-              "style-loader",
-              // Translates CSS into CommonJS
-              "css-loader",
-              // Compiles Sass to CSS
-              "sass-loader",
-            ],
-          },
-        ],
+                {
+                  test: /\.s[ac]ss$/i,
+                  use: [
+                    {
+                              loader: 'file-loader',
+                              options: { outputPath: 'css/', name: '[name].min.css'}
+                          },
+                          'sass-loader'
+                  ],
+                },
+                {
+                    test: /\.(sass|less|css)$/,
+                    use: ['style-loader', 'css-loader', 'less-loader']
+                  },
+              ],
       },
     
 }
-
 

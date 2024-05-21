@@ -1,0 +1,84 @@
+.app {
+    position: relative;
+}
+.app_container {
+    display: flex;
+}
+.app__content {
+    padding: 150px 75px 0 0;
+}
+.app__title {
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 110%;
+    color: $orange;
+    max-width: 525px;
+    margin-bottom: 50px;
+}
+.text {
+}
+.app__text {
+    line-height: 150%;
+    opacity: 1;
+    max-width: 358px;
+    margin-bottom: 60px;
+}
+.app__links {
+    display: flex;
+    margin-bottom: 30px;
+}
+.app__link {
+    &:not(:last-child) {
+        padding-right: 20px;
+    }
+}
+.app__image {
+    max-height: 600px;
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+    img{
+        width: 100%;
+    }
+}
+.app__phone {
+    min-height: 100%;
+    min-width: auto;
+    img{
+        object-position: top;
+    }
+}
+
+.app__line {
+    position: absolute;
+    top: -270px;
+    left: 58%;
+    z-index: 1;
+
+}
+@media (max-width: 1000px) {
+.app__line {
+    display: none;
+}
+}
+
+@media (max-width: 480px) {
+    .app__content {
+        padding: 60px 30px 0 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .app_container {
+        display: flex;
+        flex-direction: column;
+    }
+    .app__image {
+        max-width: 220px;
+        max-height: 407px;
+        align-self: center;
+    }
+    .app__links {
+        margin-bottom: 30px;
+    }
+}
