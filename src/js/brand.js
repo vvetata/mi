@@ -47,9 +47,9 @@ if (window.innerWidth > 480) {
 if (window.innerWidth < 480) {
     brandCard.style.width = window.innerWidth + 'px';
     
-    for (let img of cardBrandimgArr) {
+    /*for (let img of cardBrandimgArr) {
         img.classList.remove('_ibg');
-      }
+      }*/
 }
 
 

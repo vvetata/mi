@@ -1,0 +1,225 @@
+.rewievs {
+    margin: 120px 0;
+    background: url(/images/rewievs/lg1.png) no-repeat top right,
+    url(/images/rewievs/line1.png) no-repeat top right;
+}
+.rewievs__head {
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 110%;
+    color: $orange;
+    margin-bottom: 30px;
+}
+.rewievs__body {
+}
+.rewievs__cards {
+    padding-left: 20px;
+    display: flex;
+    white-space: nowrap;
+    margin-bottom: 30px;
+    overflow: hidden;
+    min-height: 323px;
+}
+.rewievs__card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 0 40%;
+    background-color: $black;
+    white-space: normal;
+    max-height: 100%;
+    border-radius: 15px;
+        margin-right: 40px;
+    
+}
+
+.rewievs__card_black {
+    background-color: $white;
+    color: $black;
+}
+
+.card-rewievs__content {
+    margin: 40px;
+}
+.card-rewievs__name {
+    opacity: 1;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 120%;
+    &::after {
+        content: '';
+        display: block;
+        width: 100px;
+        height: 3px;
+        background-color: $orange;
+        margin: 10px 0;
+    }
+}
+.card-rewievs__text {
+    opacity: 1;
+}
+.rewievs__control {
+    display: flex;
+    justify-content: space-between;
+}
+.rewievs__button {
+    width: 189px;
+    height: 54px;
+    background-color: $white;
+    color: $black;
+    border-radius: 65px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.rewievs__btns {
+    display: flex;
+    position: relative;
+    left: -37px;
+}
+.rewievs__btnLeft {
+    width: 54px;
+    height: 54px;
+    border-radius: 50px;
+    color: $black;
+    background-color: $white;
+    margin-right: 20px;
+}
+.rewievs__btnRight {
+    width: 54px;
+    height: 54px;
+    border-radius: 50px;
+    color: $black;
+    background-color: $white;
+    margin-right: 20px;
+}
+.rewievs__btn_active {
+width: 54px;
+    height: 54px;
+    border-radius: 50px;
+    color: $white;
+    background-color: $orange;
+}
+
+.rewievs__controlMobile {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    display: none;
+}
+
+.rewievs__indicators {
+    display: flex;
+    width: 90px;
+    height: 10px;
+    justify-content: space-between;
+}
+.rewievs__indicator {
+    background-color: transparent;
+    color: $white;
+    opacity: 0.2;
+}
+.rewievs__indicator_active {
+    opacity: 1;
+}
+
+@media (max-width: 480px) {
+    .rewievs {
+        margin: 60px 0;
+        background: url(/images/rewievs/lg1.png) no-repeat top right,
+        url(/images/rewievs/line2.png) no-repeat top right;
+        text-align: center;
+    }
+    .rewievs__head {
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 120%;
+        color: $white;
+        padding-top: 60px;
+        text-align: start;
+    }
+    .rewievs__cards {
+        display: flex;
+        white-space: nowrap;
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+    .rewievs__card {
+        display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 0 100%;
+    background-color: $black;
+    white-space: normal;
+    max-height: 100%;
+    border-radius: 15px;
+      
+            margin-right: 40px;
+        
+    }
+    .rewievs__card_black {
+        background-color: $white;
+        color: $black;
+    }
+    .card-rewievs__content {
+        text-align: start;
+        margin: 30px;
+    }
+    .card-rewievs__name {
+        font-size: 16px;
+        
+    }
+    .card-rewievs__text {
+        font-size: 12px;
+        line-height: 170%;
+    }
+    .rewievs__control {
+        display: flex;
+        justify-content: space-between;
+        display: none;
+    }
+    .rewievs__button {
+        width: 280px;
+    }
+    .rewievs__btns {
+        display: flex;
+        position: relative;
+        left: -37px;
+    }
+    .rewievs__btnLeft {
+        width: 54px;
+        height: 54px;
+        border-radius: 50px;
+        color: $black;
+        background-color: $white;
+        margin-right: 20px;
+    }
+    .rewievs__btnRight {
+        width: 54px;
+        height: 54px;
+        border-radius: 50px;
+        color: $white;
+        background-color: $orange;
+    }
+    
+    .rewievs__controlMobile {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 30px;
+        
+    }
+    
+    .rewievs__indicators {
+        display: flex;
+        width: 90px;
+        height: 10px;
+        justify-content: space-between;
+    }
+    .rewievs__indicator {
+        background-color: transparent;
+        color: $white;
+        opacity: 0.2;
+    }
+    .rewievs__indicator_active {
+        opacity: 1;
+    }
+}

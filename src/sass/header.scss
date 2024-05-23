@@ -6,7 +6,6 @@ $orange: #FF4C0D;
 %btn-text {
     font-size: 16px;
     font-weight: 700;
-    line-height: 150%;
 }
 
 .wrapper {
@@ -83,6 +82,29 @@ color:#222222;
         margin-right: 40px;
     }
 }
+
+.header__left{
+    display: flex;
+}
+
+.header__burger{
+    width: 54px;
+    height: 54px;
+    background-color: $white;
+    color: $black;
+    border-radius: 65px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.header__burger_black{
+    background-color: $black;
+    color: $white;
+}
+
 .header__button {
 }
 .button {
@@ -163,8 +185,29 @@ color:#222222;
     color: $white;
 }
 
-@media (max-width: 961px) {
+@media (max-width: 961px) {////////////////////////////
     .header__nav {
+        display: none;
+        color: $black;
+        background-color: $white;
+        padding: 15px 70px 15px 15px;
+        font-size: 20px;
+        position: absolute;
+        z-index: 9;
+        top: 0;
+        left: 100%;
+        transform: translate(-100%);
+        border-radius: 30px;
+    }
+    .header__nav_block{
+        display: block;
+    }
+    
+      
+    .header__burger{
+        display: flex;
+    }
+    .header__button {
         display: none;
     }
     .header__img {
@@ -177,11 +220,15 @@ color:#222222;
     .title {
         font-size: 40px;
         line-height: 120%;
+        position: relative;
+        z-index: 5;
     }
     .subtitle {
         font-size: 20px;
         line-height: 120%;
         margin-bottom: 48px;
+        position: relative;
+        z-index: 5;
     }
 }
 
@@ -194,11 +241,15 @@ color:#222222;
         max-width: 337px;
         display: block;
         top: 50px;
-        left: 50%;
+        left: 70%;
         transform: translate(-50%);
         img{
             width: 150%;
         }
+    }
+    .header__burger{
+        width: 45px;
+        height: 45px;
     }
     .header__main {
         padding-top: 150px;
@@ -223,7 +274,7 @@ color:#222222;
         border: 3px solid $black;
     }
     .btn__white {
-        width: 49%;
+        width: 50%;
         min-height: 54px;
         border-radius: 65px;
         background-color: $white;

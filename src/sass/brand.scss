@@ -1,10 +1,12 @@
 .brand {
    position: relative;
+   margin-bottom: 40px;
 }
 .brand__cards {
     position: relative;
     max-height: 51.7%;
     overflow: hidden;
+    scroll-behavior: smooth;
 }
 //------
 .brand___card {
@@ -27,7 +29,7 @@
 
 .card-brand__image_opacity {
     img{
-        filter: grayscale(60%);
+        filter: grayscale(60%) blur(80%);
     }
 }
 
@@ -49,7 +51,6 @@
     margin-bottom: 4.3%;
 }
 .card-brand__text {
-    line-height: 150%;
     max-width: 460px;
     color: $black;
 }
@@ -102,13 +103,16 @@
      .card-brand {
      }
      .card-brand__image {
+        max-height: 80%;
          position: absolute;
          width: 100%;
-         height: 100%;
          top: 0;
-         left: 0;   
+         left: 0;
+         
          img{
-             width: 100%;
+            object-fit: none;
+            object-position: 70% center;
+            opacity: 0.3; 
          }
      }
      
@@ -142,9 +146,10 @@
      
      //------------
      .brand__indicators {
-        max-width: 150px;
+        max-width: 90px;
         max-height: 10px;
         display: flex;
+        justify-content: space-between;
         position: absolute;
         top: 450px;
         left: 50%;
@@ -155,14 +160,12 @@
          display: block;
          background-color: transparent;
          cursor: pointer;
-         position: relative;
-         z-index: 5;
          svg{
              color: #fff;
              opacity: 0.2;
          }
          &:not(:last-child) {
-             margin-right: 30px;
+             
          }
      }
      

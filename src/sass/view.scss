@@ -12,6 +12,18 @@ $orange: #FF4C0D;
     url(/images/app/lg1.png) no-repeat right 1200px,
     url(/images/app/lg2.png) no-repeat left bottom;
 }
+
+@media (max-width: 480px) {
+    .container__bg {
+        background:  url(/images/view/lg1.png) no-repeat top right,
+        url(/images/view/lg2.png) no-repeat 0 300px,
+        url(/images/view/line2.png) no-repeat 0 650px,
+        url(/images/security/lg1.png) no-repeat 155px 950px,
+        url(/images/app/lg1.png) no-repeat right 1200px,
+        url(/images/app/lg2.png) no-repeat left bottom;
+    }
+}
+
 .view {
     padding: 120px 0;
     
@@ -72,8 +84,7 @@ $orange: #FF4C0D;
 }
 
 .card-view__text {
-    font-size: 14px; 
-    line-height: 150%;
+    font-size: 14px;
     letter-spacing: -1%;
 }
 
@@ -82,7 +93,7 @@ $orange: #FF4C0D;
 @media (max-width: 960px) {
     .view {
         padding: 80px 0;
-        background: url(/dist/images/view/lg1.png) no-repeat top right;
+        background: url(/images/view/lg1.png) no-repeat top right;
     }
     .view__head {
         font-size: 30px;
@@ -118,8 +129,7 @@ $orange: #FF4C0D;
 @media (max-width: 480px) {
     .view {
         padding: 60px 0;
-        background: url(/dist/images/view/lg1.png) no-repeat top right,
-        url(/dist/images/view/lineMobile.png) no-repeat top right
+        background: url(/images/view/lineMobile.png) no-repeat top right;
     }
     .view__head {
         font-size: 25px;
