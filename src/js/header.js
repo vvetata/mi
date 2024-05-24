@@ -15,7 +15,7 @@ nav[0].onclick = () => {
    about.scrollIntoView({
     behavior: 'smooth'
    });
-   headerNav.classList.remove('header__nav_block');
+   headerNav.classList.remove('display_block');
     return false;
 }
 
@@ -23,7 +23,7 @@ nav[1].onclick = () => {
     view.scrollIntoView({
         behavior: 'smooth'
        });
-       headerNav.classList.remove('header__nav_block');
+       headerNav.classList.remove('display_block');
      return false;
 }
 
@@ -31,7 +31,7 @@ nav[2].onclick = () => {
     security.scrollIntoView({
         behavior: 'smooth'
        });
-       headerNav.classList.remove('header__nav_block');
+       headerNav.classList.remove('display_block');
      return false;
 }
 
@@ -39,7 +39,7 @@ nav[3].onclick = () => {
     rewievs.scrollIntoView({
         behavior: 'smooth'
        });
-       headerNav.classList.remove('header__nav_block');
+       headerNav.classList.remove('display_block');
      return false;
 }
 
@@ -47,7 +47,7 @@ nav[4].onclick = () => {
     questions.scrollIntoView({
         behavior: 'smooth'
        });
-       headerNav.classList.remove('header__nav_block');
+       headerNav.classList.remove('display_block');
      return false;
 }
 
@@ -55,11 +55,11 @@ btnBuy.onclick = () => {
     buy.scrollIntoView({
         behavior: 'smooth'
        });
-       headerNav.classList.remove('header__nav_block');
+       headerNav.classList.remove('display_block');
        return false;
 }
 
 burger.onclick = () => {
-        headerNav.classList.toggle('header__nav_block');
+        headerNav.classList.toggle('display_block');
         
 }

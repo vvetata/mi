@@ -2,6 +2,7 @@ import './sass/main.scss';
 import './js/brand.js';
 import './js/rewievs.js';
 import './js/header.js';
+import './js/buy.js';
 
 let btnBlack = document.querySelector('.btn__black');
 let btnWhite = document.querySelector('.btn__white');

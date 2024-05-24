@@ -185,7 +185,7 @@ color:#222222;
     color: $white;
 }
 
-@media (max-width: 961px) {////////////////////////////
+@media (max-width: 961px) {
     .header__nav {
         display: none;
         color: $black;
@@ -199,10 +199,12 @@ color:#222222;
         transform: translate(-100%);
         border-radius: 30px;
     }
-    .header__nav_block{
+    .display_block{
         display: block;
     }
-    
+    .button__style {
+        max-width: 248px;
+    }
       
     .header__burger{
         display: flex;
@@ -216,19 +218,19 @@ color:#222222;
     }
     .header__main {
         margin-bottom: 150px;
+        position: relative;
+        z-index: 3;
     }
     .title {
         font-size: 40px;
         line-height: 120%;
-        position: relative;
-        z-index: 5;
+        
     }
     .subtitle {
         font-size: 20px;
         line-height: 120%;
         margin-bottom: 48px;
-        position: relative;
-        z-index: 5;
+       
     }
 }
 
@@ -266,7 +268,7 @@ color:#222222;
 
     .button__style {
         display: inline-block;
-        width: 100%;
+        max-width: 440px;
         border: 3px solid $white;
         text-wrap: nowrap;
     }
